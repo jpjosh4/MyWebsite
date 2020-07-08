@@ -95,9 +95,12 @@ textarea{
 	visibility: hidden;
 }
 @media (max-width:700px) {
-	body{
+	html, body{
 	overflow-x: hidden;
 	background-size: 100% 100%;
+}
+	body{
+	position: relative;
 }
 
 .nav-links{
@@ -167,9 +170,12 @@ input, textarea{
 	
 }
 @media (max-width:360px) {
-	body{
+	html, body{
 	overflow-x: hidden;
 	background-size: 100% 100%;
+}
+	body{
+	position: relative;
 }
  
 .nav-links{
