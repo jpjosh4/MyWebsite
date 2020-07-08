@@ -81,6 +81,36 @@ margin-top: 40px;
 }
 @media (max-width:700px) 
 	{
+		html,body{
+			overflow-x: hidden;
+		}
+		body{
+			position: relative;
+		}
+		h1{
+			font-size: 50px;
+		}
+		.question{
+			font-size: 30px;
+
+		}
+		.answers{
+			margin-top: 60px;
+		}
+		button{
+			margin-top: 150px;
+			
+		}
+	}
+@media (max-width:360px) 
+	{
+		
+		html,body{
+			overflow-x: hidden;
+		}
+		body{
+			position: relative;
+		}
 		h1{
 			font-size: 50px;
 		}
