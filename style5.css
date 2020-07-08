@@ -88,15 +88,6 @@ textarea{
 
 	color: #1E1B8D;
 }
-
-@keyframes text{
-	0%{
-		color: grey;
-		margin-bottom: -100px;
-	}
-	
-}
-
 .fa-bars{
 	visibility: hidden;
 }
@@ -157,7 +148,23 @@ textarea{
 	font-size: 15px;
 	display: block;
 }
-
+.Contactform{
+	margin-left: 100px;
+	width: 250px;
+	height: 400px;
+}
+.Contactform label{
+	font-size: 20px;
+}
+input, textarea{
+	font-size: 10px;
+}
+.submitbutton{
+	margin-left: 60px;
+	width: 120px;
+	font-size: 10px;
+}
+	
 }
 @media (max-width:360px) {
 	body{
@@ -212,6 +219,22 @@ textarea{
 	margin-top: 50px;
 	font-size: 15px;
 	display: block;
+}
+	.Contactform{
+	margin-left: 35px;
+	width: 250px;
+	height: 350px;
+}
+.Contactform label{
+	font-size: 20px;
+}
+input, textarea{
+	font-size: 10px;
+}
+.submitbutton{
+	margin-left: 60px;
+	width: 120px;
+	font-size: 10px;
 }
 
 }
