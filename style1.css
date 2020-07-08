@@ -144,6 +144,7 @@ img
 @media (max-width:700px) {
 body{
 	overflow-x: hidden;
+        width: 100%;
 }
  .title{
  	margin: 80px 40px;
@@ -206,7 +207,7 @@ img
 @media (max-width:360px) {
 	body{
 	overflow-x: hidden;
-
+       width: 100%;
 }
  .title{
  	margin: 80px 40px;
