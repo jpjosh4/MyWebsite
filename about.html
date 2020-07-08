@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>About</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="main">
+		<nav>
+			<div>
+				<img src="wix.jpg" class="img" height="50px" width="150px">
+			</div>
+			<div class="nav-links" id="nav-links">
+				<i class="fa fa-times fa-2x" aria-hidden="true" onclick="closeMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="#">About</a></li>
+					<li><a href="technologies.html">Technologies</a></li>
+					<li><a href="quiz.html">Quiz</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<i class="fa fa-bars fa-2x" aria-hidden="true" onclick="showMenu()"></i>
+			</div>
+		</nav>
+	</div>
+	<div class="title">
+		<h1>About</h1>
+		<div class="img1">
+		<img src="self.jpg" height="160px" width="120px">
+		</div>
+		<p>I am Joshua Pradeep. I'm a 2nd year student, studying B.E CSE in St. Joseph's College of Engineering. This is just a small miniproject using HTML, CSS, Javascript. Hope u like it.</p>
+	</div>
+	<script>
+		var show = document.getElementById("nav-links");
+		function showMenu() {
+			show.style.right="0";
+		}
+		function closeMenu(){
+			show.style.right="-300px";	
+		}
+	</script>
+</body>
+</html>

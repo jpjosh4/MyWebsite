@@ -1,0 +1,298 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+	background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url("q.jpg");
+	background-size: cover;
+  //background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,5));
+
+}
+
+img
+{
+	opacity: 1.5;
+	border-radius: 100px;
+	margin-top: 30px;
+	margin-left: 50px;
+	border: 5px solid #ffff23;
+}
+.nav-links ul{
+	float: right;
+	list-style-type: none;
+	margin-top: -40px;
+	margin-right: 50px;
+}
+.nav-links ul li{
+	display: inline-block;
+}
+.nav-links ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px ;
+	padding: 5px 20px;
+	border: 1px solid transparent; 
+	transition: 0.6s ease;
+}
+.nav-links ul li a:hover{
+	background-color: #fff;
+	color: #d06cf5;
+}
+.nav-links ul li.active a{
+	background-color: #fff;
+	color: #d06cf5;
+}
+.title{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	}
+.title h1{
+	 
+	animation: text 2.5s 1;
+	font-size: 100px;
+	background: -webkit-linear-gradient(pink, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+
+ /*<!<button class="button"><a href="quiz1.html" class="quiz">Start Quiz</a></button>>
+ .button{
+
+ 	position: absolute;
+ 	top: 70%;
+ 	left: 50%;
+ 	transform: translate(-50%,-50%);
+ 	height: 50px;
+ 	width: 200px;
+ 	border-radius: 10px;
+ 	background-color: transparent;
+ 	border: 2px solid #d06cf5;
+ 	transition: 0.6s ease;
+
+ }
+.button a{
+ 	animation: button 2.5s 1;
+ 	text-decoration: none;
+ 	font-size: 30px;
+ 	background: -webkit-linear-gradient(purple, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ .button:hover {
+ 	background-image: linear-gradient(to right, #bf4de8, #d06cf5);
+ 	border: none;
+ }
+ .button a:hover{
+ 	background: -webkit-linear-gradient(red, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }*/
+ .btn{
+ 	position: absolute;
+ 	top: 70%;
+ 	left: 50%;
+ 	transform: translate(-50%,-50%);
+
+ }
+ .button{
+ 	
+ 	border: 2px solid #d06cf5;
+ 	text-decoration: none;
+ 	border-radius: 10px;
+ 	font-size: 30px;
+ 	padding: 10px 30px;
+ 	color: #d06cf5;
+  transition: 0.4s ease;
+
+}
+.button:hover{
+	border: none;
+	background-image: linear-gradient(to right, purple, #d06cf5);
+	color: red;
+	box-shadow: 0 0 10px #d06cf5, 0 0 10px #d06cf5, 0 0 10px #d06cf5;
+	transition-delay: 0.2s;
+}
+
+@keyframes text{
+	0%{
+		color: grey;
+		margin-bottom: -100px;
+	}
+	
+}
+@keyframes button{
+	0%{
+		margin-bottom: -100px;
+	}
+}
+
+.fa-bars{
+	visibility: hidden;
+}
+.fa-times{
+	visibility: hidden;
+}
+@media (max-width:700px) {
+body{
+	overflow-x: hidden;
+}
+ .title{
+ 	margin: 80px 40px;
+ 	left: 40%;
+ 	top: 35%;
+ }
+ .title h1{
+ 	font-size: 40px;
+ }
+.nav-links{
+	padding: 10px 30px;
+}
+.fa-bars{
+	visibility: visible;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	margin-top: 25px;
+	color: #fff;
+}
+.nav-links .fa{
+	display: block;
+	margin: 10px 25px;
+	font-size: 22px;
+	cursor: pointer;
+}
+img
+{
+	height: 30px;
+	width: 90px;
+}
+
+.nav-links{
+	height: 100vh;
+	width: 200px;
+	margin-top: 0px;
+	background: purple;
+	top: 0;
+	right: -300px;
+	position: absolute;
+	text-align: left;
+	z-index: 2;
+	transition: 0.5s ease;
+}
+.fa-times{
+	visibility: visible;
+	color: #fff;
+	margin-top: 0px;
+	top: 0;
+	right: 0; 
+	position: absolute;
+}
+.nav-links ul li a{
+	margin-top: 50px;
+	font-size: 15px;
+	display: block;
+}
+
+/*.button{
+	height: 30px;
+	width: 125px;
+	top: 60%;
+}
+.button a{
+	font-size: 20px;
+}*/
+.btn{
+	top: 60%;
+	left: 48%;
+}
+.button{
+	padding: 5px 10px;
+	font-size: 20px;
+}
+
+}
+@media (max-width:360px) {
+	body{
+	overflow-x: hidden;
+
+}
+ .title{
+ 	margin: 80px 40px;
+ 	left: 40%;
+ 	top:35%;
+ }
+ .title h1{
+ 	font-size: 40px;
+ }
+.nav-links{
+	padding: 10px 30px;
+}
+.fa-bars{
+	visibility: visible;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	margin-top: 25px;
+	color: #fff;
+}
+.nav-links .fa{
+	display: block;
+	margin: 10px 25px;
+	font-size: 22px;
+	cursor: pointer;
+}
+img
+{
+	height: 30px;
+	width: 90px;
+}
+
+.nav-links{
+	height: 100vh;
+	width: 200px;
+	margin-top: 0px;
+	background: purple;
+	top: 0;
+	right: -300px;
+	position: absolute;
+	text-align: left;
+	z-index: 2;
+	transition: 0.5s ease;
+
+}
+.fa-times{
+	visibility: visible;
+	color: #fff;
+	margin-top: 0px;
+	top: 0;
+	right: 0; 
+	position: absolute;
+}
+.nav-links ul li a{
+	margin-top: 50px;
+	font-size: 15px;
+	display: block;
+}
+
+/*.button{
+	height: 30px;
+	width: 125px;
+	top: 60%;
+}
+.button a{
+	font-size: 20px;
+}*/
+.btn{
+	top: 60%;
+	left: 48%;
+}
+.button{
+	padding: 5px 10px;
+	font-size: 20px;
+}
+
+
+}

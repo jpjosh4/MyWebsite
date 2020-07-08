@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Quiz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style4.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="main">
+		<nav>
+			<div>
+				<img src="wix.jpg" height="50px" width="150px">
+			</div>
+			<div class="nav-links" id="nav-links">
+				<i class="fa fa-times fa-2x" aria-hidden="true" onclick="closeMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="technologies.html">Technologies</a></li>
+					<li class="active"><a href="#">Quiz</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<i class="fa fa-bars fa-2x" aria-hidden="true" onclick="showMenu()"></i>
+			</div>
+		</nav>
+	</div>
+	<div class="title">
+		<h1>QUIZ TIME</h1>
+	</div>
+	<div class="btn">
+		
+		<a href="quiz1.html" class="button">Start Quiz</a>
+	</div>	
+	<script>
+		var show = document.getElementById("nav-links");
+		function showMenu() {
+			show.style.right="0";
+		}
+		function closeMenu(){
+			show.style.right="-300px";	
+		}
+	</script>
+</body>
+</html>

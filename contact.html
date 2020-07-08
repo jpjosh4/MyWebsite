@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Contact</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style5.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="main">
+		<nav>
+			<div>
+				<img src="wix.jpg" class="img" height="50px" width="150px">
+			</div>
+			<div class="nav-links" id="nav-links">
+				<i class="fa fa-times fa-2x" aria-hidden="true" onclick="closeMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="technologies.html">Technologies</a></li>
+					<li><a href="quiz.html">Quiz</a></li>
+					<li class="active"><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<i class="fa fa-bars fa-2x" aria-hidden="true" onclick="showMenu()"></i>
+			</div>
+		</nav>
+	</div>
+	<form class="Contactform" action="contact.php">
+		<label>Name</label>
+		<input type="text" name="name">
+		<label>E-Mail</label>
+		<input type="text" name="Email">
+		<label>Message</label>
+		<textarea name="Message"></textarea>
+		<button class="submitbutton">Send Message</button>
+	</form>
+	<script>
+		var show = document.getElementById("nav-links");
+		function showMenu() {
+			show.style.right="0";
+		}
+		function closeMenu(){
+			show.style.right="-300px";	
+		}
+	</script>
+</body>
+</html>

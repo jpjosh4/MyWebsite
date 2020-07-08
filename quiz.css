@@ -1,0 +1,98 @@
+@import url(<a href="https://fonts.googleapis.com/css?family=Work">https://fonts.googleapis.com/css?family=Work</a>+Sans:300,600);
+ 
+body{
+font-size: 30px;
+font-family: 'Work Sans', sans-serif;
+color: #fff;rgb(24, 23, 23);
+font-weight: 300;
+text-align: center;
+/*background-color: #f8e8f2;*/
+	background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url("q2.jpg");
+	background-size: cover;
+}
+h1{
+font-weight: 300;
+margin: 0px;
+padding: 10px;
+font-size: 70px;
+background: -webkit-linear-gradient(steelblue, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.question{
+font-size: 40px;
+margin-top: 50px;
+color: yellow;
+
+}
+.answers {
+margin-bottom: 20px;
+text-align: left;
+display: inline-block;
+}
+.answers label{
+display: block;
+margin-bottom: 10px;
+}
+button{
+font-family: 'Work Sans', sans-serif;
+font-size: 22px;
+background-color: #3276EC;
+color: #fff;
+border: 0px;
+border-radius: 3px;
+padding: 20px;
+cursor: pointer;
+margin-top: 70px;
+}
+.e{
+	text-decoration: none;
+	color: #fff;
+}
+.e:hover{
+	color: #000;
+}
+.sub{
+	text-decoration: none;
+	color: #fff;
+}
+button:hover{
+background-color: yellow;
+color:#000;
+}
+
+.slide{
+position: absolute;
+left: 0px;
+top: 0px;
+width: 100%;
+z-index: 1;
+opacity: 0;
+transition: opacity 0.5s;
+}
+.active-slide{
+opacity: 1;
+z-index: 2;
+}
+.quiz-container{
+position: relative;
+height: 200px;
+margin-top: 40px;
+}
+@media (max-width:700px) 
+	{
+		h1{
+			font-size: 50px;
+		}
+		.question{
+			font-size: 30px;
+
+		}
+		.answers{
+			margin-top: 60px;
+		}
+		button{
+			margin-top: 150px;
+			
+		}
+	}
