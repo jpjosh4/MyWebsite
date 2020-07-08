@@ -106,9 +106,12 @@ p{  animation: text 2.5s 1;
 	visibility: hidden;
 }
 @media (max-width:700px) {
-	body{
+	html, body{
 		overflow-x: hidden;
 	}
+	body{
+	position: relative;
+}
 	.m{
 		background-image: unset;
 	}
@@ -177,9 +180,12 @@ p{	margin-left: 60px;
 }
 }
 @media (max-width:360px) {
-	body{
+	html, body{
 		overflow-x: hidden;
 	}
+	body{
+	position: relative;
+}
 	.m{
 		background-image: unset;
 	}
