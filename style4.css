@@ -136,8 +136,11 @@ img
 	visibility: hidden;
 }
 @media (max-width:700px) {
-body{
+html, body{
 	overflow-x: hidden;
+}
+	body{
+	position: relative;
 }
  .title{
  	margin: 80px 40px;
@@ -215,9 +218,12 @@ img
 
 }
 @media (max-width:360px) {
-	body{
+	html, body{
 	overflow-x: hidden;
 
+}
+	body{
+	position: relative;
 }
  .title{
  	margin: 80px 40px;
