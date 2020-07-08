@@ -79,9 +79,12 @@ body{
 	visibility: hidden;
 }
 @media (max-width:700px) {
-	body{
+	html, body{
 	overflow-x: hidden;
 	background-size: 100% 100%;
+}
+	body{
+	position: relative;
 }
  .title{
  	margin: 80px 40px;
@@ -145,12 +148,15 @@ body{
 
 }
 @media (max-width:360px) {
-	body{
+	html, body{
 	overflow-x: hidden;
 	background-size: 100% 100%;
 }
+	body{
+	position: relative;
+}
  .title{
- 	margin: 80px 40px;
+ 	margin: 150px 40px;
  }
  .title h1{
  	font-size: 25px;
